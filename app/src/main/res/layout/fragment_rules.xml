@@ -1,12 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:backgroundTint="#10C8DF"
     tools:context=".fragments.RulesFragment">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rules"
+        android:textColor="#FF5722"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/general_info"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/rules"
+        android:layout_centerHorizontal="true"
+        android:text="@string/general_info"
+        android:background="#2196F3"
+        android:layout_marginTop="10dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/visitors"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="@string/duties_visitors"
+        android:layout_below="@id/general_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#2196F3"
+        />
+
+    <Button
+        android:id="@+id/prohibition"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="#2196F3"
+        android:text="@string/prohibition"
+        android:layout_below="@id/visitors"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="#2196F3"
+        android:text="@string/admins_can"
+        android:layout_below="@id/prohibition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/visitor_can"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="#2196F3"
+        android:text="@string/visitors_can"
+        android:layout_below="@id/admin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="#2196F3"
+        android:text="@string/discuss"
+        android:layout_below="@id/visitor_can"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

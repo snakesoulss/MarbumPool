@@ -2,10 +2,17 @@
     <string name="app_name">PoolMarbum</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="infotmationAboutPriceInHour">Час занятия в бассейне всего 200 рублей</string>
-    <string name="operationMode">Режим работы: Пн-вс: 8:00 - 20:00</string>
-    <string name="numberPhone">Телефон для связи:+7 (917)-710-47-36</string>
+    <string name="operationMode">Режим работы: Пн&#8211;вс: 8:00 &#8211; 20:00</string>
+    <string name="numberPhone">Телефон для связи:+7 (917)&#8211;710&#8211;47&#8211;36</string>
     <string name="buyTicket">Купить билет</string>
     <string name="ourPrice">Наши цены</string>
     <string name="bnt_buy_child_tick">Купить детский билет</string>
     <string name="bnt_buy_tick">Купить взрослый билет</string>
+    <string name="rules">ПРАВИЛА ПОСЕЩЕНИЯ</string>
+    <string name="general_info">1. Общие сведения</string>
+    <string name="duties_visitors">2. Обязанности посетителей</string>
+    <string name="prohibition">3. Посетителям запрещается</string>
+    <string name="admins_can">4. Администрация имеет право</string>
+    <string name="visitors_can">5. Посетители имеют право</string>
+    <string name="discuss">6. Разрешение конфликтных ситуаций</string>
 </resources>
