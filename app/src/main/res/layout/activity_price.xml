@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#9FEFA3"
-    tools:context=".fragments.PriceFragment">
+    tools:context=".PriceActivity">
+
     <TextView
         android:id="@+id/ourPrice"
         android:layout_width="wrap_content"
@@ -22,9 +22,10 @@
         android:layout_height="300dp"
         android:layout_below="@id/ourPrice"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/tickets_for_child" />
+        android:src="@drawable/tickets_for_child"
+        android:contentDescription="@string/todo" />
 
     <Button
         android:id="@+id/button_child_ticket"
@@ -45,9 +46,10 @@
         android:layout_height="300dp"
         android:layout_below="@id/tickets_for_child"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/tickets" />
+        android:src="@drawable/tickets"
+        android:contentDescription="@string/todo1" />
 
     <Button
         android:id="@+id/button_buy_ticket"
@@ -59,6 +61,19 @@
         android:backgroundTint="@color/for_buy_tickets"
         android:text="@string/bnt_buy_tick"
         android:textColor="@color/white" />
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:text="@string/back"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_buy_ticket"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/for_buy_tickets"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="4dp"
+        >
+    </Button>
 
 
 </RelativeLayout>

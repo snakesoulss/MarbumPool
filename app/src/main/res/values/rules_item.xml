@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rules">
+        <item>Общие сведения</item>
+        <item>Обязанности посетителей</item>
+        <item>Посетителям запрещается</item>
+        <item>Администрация имеет право</item>
+        <item>Посетители имеют право</item>
+        <item>Разрешение конфликтных ситуаций</item>
+    </string-array>
+
+</resources>

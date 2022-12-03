@@ -1,42 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#0187FA">
 
-    <com.google.android.material.tabs.TabLayout
+
+
+    <TextView
+        android:id="@+id/infoAboutPriceInHour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tab_layout">
+        android:text="@string/infotmationAboutPriceInHour"
+        android:textColor="#FAFAFA"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="информация">
-        </com.google.android.material.tabs.TabItem>
+    <TextView
+        android:id="@+id/operatingMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infoAboutPriceInHour"
+        android:text="@string/operationMode"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="расписание и цены">
-        </com.google.android.material.tabs.TabItem>
+    <TextView
+        android:id="@+id/numberPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numberPhone"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/operatingMode"
+        />
+    <Button
+        android:id="@+id/buyTicket"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buyTicket"
+        android:layout_below="@id/numberPhone"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#FFC107"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="4dp"
+        />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="правила посещения">
-        </com.google.android.material.tabs.TabItem>
+    <ImageView
+        android:id="@+id/info_pool"
+        android:layout_width="700dp"
+        android:layout_height="450dp"
+        android:layout_below="@id/buyTicket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/info_pool"
+        android:contentDescription="@string/todo2" />
 
-    </com.google.android.material.tabs.TabLayout>
+    <Button
+        android:id="@+id/button_information"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:text="@string/information"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/info_pool"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="4dp"
+        >
+    </Button>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/view_pager"
-        android:layout_below="@+id/tab_layout">
+    <Button
+        android:layout_below="@id/info_pool"
+        android:id="@+id/button_price"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/price">
+    </Button>
 
-    </androidx.viewpager2.widget.ViewPager2>
+    <Button
+        android:id="@+id/button_rules"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/info_pool"
+        android:layout_marginStart="290dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        android:text="@string/rulesBtn">
 
+    </Button>
 </RelativeLayout>
