@@ -40,6 +40,11 @@ public class RulesActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        visitors = findViewById(R.id.visitors);
+        visitors.setOnClickListener(view -> {
+            Intent intent = new Intent(RulesActivity.this, Visitors.class);
+            startActivity(intent);
+        });
 
     }
 }
