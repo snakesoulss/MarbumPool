@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class RulesActivity extends AppCompatActivity {
@@ -43,6 +42,18 @@ public class RulesActivity extends AppCompatActivity {
         visitors = findViewById(R.id.visitors);
         visitors.setOnClickListener(view -> {
             Intent intent = new Intent(RulesActivity.this, Visitors.class);
+            startActivity(intent);
+        });
+
+        prohibition = findViewById(R.id.prohibition);
+        prohibition.setOnClickListener(view -> {
+            Intent intent = new Intent(RulesActivity.this, Prohibition.class);
+            startActivity(intent);
+        });
+
+        visitorsCan = findViewById(R.id.visitor_can);
+        visitorsCan.setOnClickListener(view -> {
+            Intent intent = new Intent(RulesActivity.this, VisitorsCan.class);
             startActivity(intent);
         });
 

@@ -12,7 +12,7 @@
         android:id="@+id/infoAboutPriceInHour"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/infotmationAboutPriceInHour"
+        android:text="@string/informationAboutPriceInHour"
         android:textColor="#FAFAFA"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -62,20 +62,6 @@
         android:contentDescription="@string/todo2" />
 
     <Button
-        android:id="@+id/button_information"
-        android:layout_width="130dp"
-        android:layout_height="100dp"
-        android:text="@string/information"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/info_pool"
-        android:layout_marginTop="18dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@android:color/black"
-        android:layout_marginStart="4dp"
-        >
-    </Button>
-
-    <Button
         android:layout_below="@id/info_pool"
         android:id="@+id/button_price"
         android:layout_width="120dp"
@@ -99,4 +85,16 @@
         android:text="@string/rulesBtn">
 
     </Button>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/info_pool"
+        android:backgroundTint="@color/white"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/todo_" />
 </RelativeLayout>
