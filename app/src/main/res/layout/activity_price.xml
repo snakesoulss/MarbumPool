@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -61,19 +62,19 @@
         android:backgroundTint="@color/for_buy_tickets"
         android:text="@string/bnt_buy_tick"
         android:textColor="@color/white" />
-    <Button
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_back"
-        android:layout_width="130dp"
-        android:layout_height="100dp"
-        android:text="@string/back"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/button_buy_ticket"
-        android:layout_marginTop="18dp"
-        android:backgroundTint="@color/for_buy_tickets"
-        android:textColor="@android:color/black"
-        android:layout_marginStart="4dp"
-        >
-    </Button>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#6375DA"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:contentDescription="@string/todo_back"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
 
 
 </RelativeLayout>

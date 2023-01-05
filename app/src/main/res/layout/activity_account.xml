@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/imageFilterButton6"
+        android:layout_width="109dp"
+        android:layout_height="103dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:layout_marginStart="150dp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="InvalidId"
+        android:autofillHints="" />
+
+    <EditText
+        android:layout_marginStart="150dp"
+        android:layout_below="@id/name"
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/surname"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="67dp"
+        android:autofillHints="" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_below="@id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
