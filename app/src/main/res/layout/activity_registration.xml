@@ -71,5 +71,33 @@
         android:textSize="20sp"
         android:text="@string/signin_to_your" />
 
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:hint="@string/email"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/pool_registration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:backgroundTint="@color/white"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_below="@id/EmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints="" />
+
 
 </RelativeLayout>
