@@ -115,4 +115,7 @@
     <string name="surname">Surname</string>
     <string name="pool">pool</string>
     <string name="todo_back">TODO</string>
+    <string name="email">Введите почту</string>
+    <string name="password">Введите пароль</string>
+    <string name="avtorization">Авторизоваться</string>
 </resources>
