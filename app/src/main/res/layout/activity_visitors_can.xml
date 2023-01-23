@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VisitorsCan">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/name_vis_can"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_vis_can" />
+
+    <TextView
+        android:id="@+id/vis_can"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vis_can"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_below="@id/name_vis_can"
+        android:layout_marginTop="3dp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="57dp" />
+</RelativeLayout>
