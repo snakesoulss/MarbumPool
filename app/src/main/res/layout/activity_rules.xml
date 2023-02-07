@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/water_background"
+    android:background=""
     tools:context=".RulesActivity">
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_below="@id/rules"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:background="#D3E423"
+        android:background="@color/purple_700"
         android:text="@string/general_info">
 
     </Button>
@@ -38,14 +38,14 @@
         android:layout_below="@id/general_info"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="#D3E423"
+        android:background="@color/purple_700"
         />
 
     <Button
         android:id="@+id/prohibition"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:background="#D3E423"
+        android:background="@color/purple_700"
         android:text="@string/prohibition"
         android:layout_below="@id/visitors"
         android:layout_centerHorizontal="true"
@@ -56,7 +56,7 @@
         android:id="@+id/admin"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:background="#D3E423"
+        android:background="@color/purple_700"
         android:text="@string/admins_can"
         android:layout_below="@id/prohibition"
         android:layout_centerHorizontal="true"
@@ -67,7 +67,7 @@
         android:id="@+id/visitor_can"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:background="#D3E423"
+        android:background="@color/purple_700"
         android:text="@string/visitors_can"
         android:layout_below="@id/admin"
         android:layout_centerHorizontal="true"
@@ -78,7 +78,7 @@
         android:id="@+id/conflict"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:background="#D3E423"
+        android:background="@color/purple_700"
         android:text="@string/discuss"
         android:layout_below="@id/visitor_can"
         android:layout_centerHorizontal="true"

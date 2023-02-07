@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:background="#0187FA">
 
@@ -38,6 +39,7 @@
         android:layout_marginTop="3dp"
         android:layout_below="@id/operatingMode"
         />
+
     <Button
         android:id="@+id/buyTicket"
         android:layout_width="200dp"
@@ -46,32 +48,42 @@
         android:layout_below="@id/numberPhone"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
-        android:backgroundTint="#FFC107"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#F8F8F6"
         android:textColor="@android:color/black"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="3dp"
         />
-
-    <ImageView
+    <androidx.cardview.widget.CardView
         android:id="@+id/info_pool"
-        android:layout_width="700dp"
-        android:layout_height="450dp"
         android:layout_below="@id/buyTicket"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="1dp"
-        android:src="@drawable/info_pool"
-        android:contentDescription="@string/todo2" />
+        android:layout_width="400dp"
+        android:layout_height="430dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
 
+        <ImageView
+            android:layout_width="700dp"
+            android:layout_height="440dp"
+            android:layout_below="@id/buyTicket"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@string/todo2"
+            android:cropToPadding="false"
+            android:scaleType="fitStart"
+            android:src="@drawable/info_pool" />
+    </androidx.cardview.widget.CardView>
     <Button
-        android:layout_below="@id/info_pool"
         android:id="@+id/button_price"
         android:layout_width="120dp"
         android:layout_height="100dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:layout_below="@id/info_pool"
         android:layout_marginStart="4dp"
         android:layout_marginTop="18dp"
-        android:text="@string/price">
-    </Button>
+        android:backgroundTint="@color/white"
+        android:text="@string/price"
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/button_rules"
