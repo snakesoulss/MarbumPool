@@ -30,17 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
         boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                 .getBoolean("isFirstRun", true);
-
         if (isFirstRun) {
-
             startActivity(new Intent(MainActivity.this, Registration.class));
-            Toast.makeText(MainActivity.this, "First Run", Toast.LENGTH_LONG)
-                    .show();
         }
-
-
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                 .putBoolean("isFirstRun", false).apply();
+
+
         price = findViewById(R.id.button_price);
         price.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, PriceActivity.class);

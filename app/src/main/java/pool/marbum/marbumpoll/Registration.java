@@ -1,14 +1,19 @@
 package pool.marbum.marbumpoll;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Registration extends AppCompatActivity implements View.OnClickListener{
     private FirebaseAuth mAuth;
@@ -25,10 +30,17 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btnSignin).setOnClickListener(this);
         findViewById(R.id.btnRegistration).setOnClickListener(this);
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            Intent i = new Intent(Registration.this, MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
+        } else {
+            Log.d(TAG, "onAuthStateChanged:signed_out");
+        }
+
     }
-
-
-
 
     @Override
     public void onClick(View view) {
