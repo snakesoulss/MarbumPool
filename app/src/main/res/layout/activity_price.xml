@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".PriceActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
 
     <TextView
         android:id="@+id/ourPrice"
@@ -18,64 +23,83 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <ImageView
+    <androidx.cardview.widget.CardView
         android:id="@+id/tickets_for_child"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:layout_below="@id/ourPrice"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/childticket"
-        android:contentDescription="@string/todo" />
+        android:layout_width="375dp"
+        android:layout_height="333dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="8dp">
 
-    <Button
-        android:id="@+id/button_child_ticket"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ourPrice"
-        android:layout_alignBottom="@+id/ourPrice"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="278dp"
-        android:layout_marginBottom="-326dp"
-        android:backgroundTint="@color/purple_700"
-        android:text="@string/bnt_buy_child_tick"
-        android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="490dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="-58dp"
+            android:layout_below="@id/ourPrice"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/childticket" />
 
-    <ImageView
+        <Button
+            android:id="@+id/button_child_ticket"
+            android:layout_marginStart="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="278dp"
+            android:layout_marginBottom="-326dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/bnt_buy_child_tick"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
         android:id="@+id/ticket"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_width="386dp"
+        android:layout_height="363dp"
+        android:layout_marginStart="5dp"
         android:layout_below="@id/tickets_for_child"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/ticketforgrownup"
-        android:contentDescription="@string/todo1" />
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="8dp">
 
-    <Button
-        android:id="@+id/button_buy_ticket"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tickets_for_child"
-        android:layout_marginTop="262dp"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/purple_700"
-        android:text="@string/bnt_buy_tick"
-        android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="517dp"
+            android:layout_height="395dp"
+            android:layout_below="@id/tickets_for_child"
+            android:layout_marginStart="-68dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@string/todo1"
+            android:src="@drawable/ticketforgrownup" />
+
+        <Button
+            android:id="@+id/button_buy_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_child_ticket"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="310dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/bnt_buy_tick"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="@color/purple_700"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/white"
         android:clickable="true"
         android:contentDescription="@string/todo_back"
         android:focusable="true"
         app:srcCompat="?attr/actionModeCloseDrawable"
         tools:ignore="ContentDescription" />
 
-
 </RelativeLayout>
+</ScrollView>
